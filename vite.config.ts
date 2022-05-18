@@ -36,10 +36,15 @@ const config = <UserConfig> defineConfig({
 				dev: !production,
 			},
 
+
+
 			// @ts-ignore This is temporary until the type definitions are fixed!
 			hot: !production
 		}),
 	],
+	optimizeDeps: {
+		exclude: ['svelte-navigator']
+	},
 	server: {
 		host: 'localhost',
 		port: 5000

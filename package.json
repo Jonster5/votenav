@@ -17,5 +17,8 @@
 	},
 	"browserslist": [
 		"defaults"
-	]
+	],
+	"dependencies": {
+		"svelte-navigator": "^3.1.5"
+	}
 }
