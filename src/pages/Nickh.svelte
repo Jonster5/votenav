@@ -7,16 +7,16 @@
 
 {#if type === 'desktop'}
     <main class="d">
-        <h2 class="d">Arnav Deshpande</h2>
+        <h2 class="d">Nick Houghton</h2>
         <h6 class="d">Class of 2024</h6>
-        <h4 class="d">Treasurer</h4>
+        <h4 class="d">Representative</h4>
         <div>
-            <img class="d" src="/images/arnav.jpg" alt="Arnav Deshpande" />
+            <img class="d" src="/images/nickh.jpg" alt="Nick Houghton" />
             <article>
                 <h3>About Me</h3>
                 <p>
-                    Hi, I’m Arnav, and I’m a sophomore. I’m running for
-                    treasurer for the Class of 2024 because I want to bring
+                    Hi, I’m Nick Houghton, and I’m a sophomore. I’m running for
+                    representative for the Class of 2024 because I want to bring
                     much-needed change to Student Government to make FHS a
                     better place for everyone, and allow everyone to have their
                     voices heard.
@@ -28,17 +28,18 @@
     <main class="m">
         <HomeButton />
 
-        <h2 class="m">Arnav Deshpande</h2>
+        <h2 class="m">Nick Houghton</h2>
         <h6 class="m">Class of 2024</h6>
-        <h4 class="m">Treasurer</h4>
-        <img class="m" src="/images/arnav.jpg" alt="Arnav Deshpande" />
+        <h4 class="m">Representative</h4>
+        <img class="m" src="/images/nickh.jpg" alt="Nick Houghton" />
         <article>
             <h3>About Me</h3>
             <p>
-                Hi, I’m Arnav, and I’m a sophomore. I’m running for treasurer
-                for the Class of 2024 because I want to bring much-needed change
-                to Student Government to make FHS a better place for everyone,
-                and allow everyone to have their voices heard.
+                Hi, I’m Nick Houghton, and I’m a sophomore. I’m running for
+                representative for the Class of 2024 because I want to bring
+                much-needed change to Student Government to make FHS a better
+                place for everyone, and allow everyone to have their voices
+                heard.
             </p>
         </article>
     </main>
@@ -111,6 +112,7 @@
 
             img {
                 height: 100%;
+
                 border-radius: 10px;
             }
 

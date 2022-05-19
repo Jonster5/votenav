@@ -1,83 +1,97 @@
 <script lang="ts">
-import { Link } from "svelte-navigator";
+    import portraits from '@assets/images.json';
+    import Mugshot from '@components/Mugshot.svelte';
+    import { deviceType } from '@utils/ui';
 
+    const type = deviceType();
 </script>
 
 <svelte:head>
-  <title>Home</title>
+    <title>Home</title>
 </svelte:head>
 
-<main>
-<header>
-  <h1>Welcome to the Nav Party</h1>
-  <nav>
-    <Link class="link" to="/nickb">Nick Bauer</Link>
-    <Link class="link" to="/josh">Joshua Kuchinskas</Link>
-    <Link class="link" to="/logan">Logan Lai</Link>
-    <Link class="link" to="/chuckie">Charles Call</Link>
-    <Link class="link" to="/arnav">Arnav Deshpande</Link>
-  </nav>
-</header>
-
-  
-</main>
+{#if type === 'desktop'}
+    <main>
+        <h1 class="d">Welcome to the <strong>Nav Party</strong></h1>
+        <div class="d">
+            {#each portraits as p}
+                <Mugshot {...p} />
+            {/each}
+        </div>
+    </main>
+{:else}
+    <main>
+        <h1 class="m">Welcome to the <br /><strong>Nav Party</strong></h1>
+        <div class="m">
+            {#each portraits as p}
+                <Mugshot {...p} />
+            {/each}
+        </div>
+    </main>
+{/if}
 
 <style lang="scss">
-  
-  main {
-    display: flex;
+    main {
+        display: flex;
+        position: absolute;
 
-    width: 100%;
-    height: 100%;
+        width: 100%;
+        height: 100%;
 
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
 
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
 
-    background: url("/images/background.svg") no-repeat center center fixed;
-    background-size: cover;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        div {
+            display: flex;
 
-    
-    header {
-    display: flex;
+            width: 100%;
+            height: 100%;
 
-    width: 100%;
-    height: 25%;
+            margin: 0;
+            padding: 0;
 
-    margin: 0;
-    padding: 0;
+            &.d {
+                gap: 1vw;
+            }
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+            &.m {
+                gap: 1vh;
+            }
 
-    h1 {
-      font-size: 4vw;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+        }
 
-      color: white;
+        h1.d {
+            font-size: 4vw;
+
+            color: white;
+
+            strong {
+                color: rgb(155, 227, 255);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                    serif;
+            }
+        }
+
+        h1.m {
+            font-size: 4vh;
+
+            color: white;
+            text-align: center;
+
+            strong {
+                color: rgb(155, 227, 255);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                    serif;
+            }
+        }
     }
-
-    nav {
-      display: flex;
-
-      width:60%;
-
-      margin: 0;
-      padding: 0;
-
-      justify-content: space-evenly;
-
-      .link {
-        text-decoration: none;
-        color: white;
-      }
-
-    }
-  }
-    
-  }
 </style>

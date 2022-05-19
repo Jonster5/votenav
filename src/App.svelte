@@ -1,40 +1,17 @@
 <script lang="ts">
-  import { Router, Route, Link } from "svelte-navigator";
-  import Home from "@pages/Home.svelte";
+    import { deviceType } from '@utils/ui';
 
-  import { CurrentPage } from "@utils/ui";
-  import { Writable, writable } from "svelte/store";
-  import Nickb from "@pages/Nickb.svelte";
-  import Josh from "@pages/Josh.svelte";
-  import Logan from "@pages/Logan.svelte";
-  import Chuckie from "@pages/Chuckie.svelte";
-  import Arnav from "@pages/Arnav.svelte";
+    import Background from '@components/Background.svelte';
+    import Header from '@components/Header.svelte';
 
-  const currentPage: Writable<CurrentPage> = writable(CurrentPage.Home);
+    import Router from 'svelte-spa-router';
+    import routes from './routes';
+
+    const type = deviceType();
 </script>
 
-<Router>
-  <Route path="/">
-    <Home />
-  </Route>
+<Background />
 
-  <Route path="nickb">
-    <Nickb />
-  </Route>
+<Header />
 
-  <Route path="josh">
-    <Josh />
-  </Route>
-
-  <Route path="logan">
-    <Logan />
-  </Route>
-
-  <Route path="chuckie">
-    <Chuckie />
-  </Route>
-
-  <Route path="arnav">
-    <Arnav />
-  </Route>
-</Router>
+<Router {routes} />
