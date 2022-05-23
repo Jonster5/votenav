@@ -66,6 +66,8 @@
 
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
+    overflow-y: scroll;
+
     &.m {
       gap: 1vh;
 

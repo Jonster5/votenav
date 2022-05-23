@@ -12,6 +12,7 @@
         <a href="/arnav" use:link>Arnav Deshpande</a>
         <a href="/chuckie" use:link>Chuckie Call</a>
         <a href="/josh" use:link>Josh Kuchinskas</a>
+        <a href="/peter" use:link>Peter Bryan</a>
         <a href="/logan" use:link>Logan Lai</a>
         <a href="/nickb" use:link>Nick Bauer</a>
         <a href="/nickh" use:link>Nick Houghton</a>

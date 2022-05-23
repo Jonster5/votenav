@@ -7,18 +7,19 @@
 
 {#if type === "desktop"}
   <main class="d">
-    <h2 class="d">Josh Kuchinskas</h2>
+    <h2 class="d">Peter Bryan</h2>
     <h6 class="d">Class of 2024</h6>
-    <h4 class="d">President</h4>
+    <h4 class="d">Vice President</h4>
     <div>
-      <img class="d" src="/images/josh.jpg" alt="Josh Kuchinskas" />
+      <img class="d" src="/images/peter.jpeg" alt="Peter Bryan" />
       <article>
         <h3>About Me</h3>
         <p>
-          Hi, I'm Josh, and I am running for president in this year's sophomore
-          election. As a proud member of Nav party, my goals are to bring back
-          courtyard lunches, increase funding toward clubs and extracurriculars,
-          and find an agreeable solution to the e-hallpass situation.
+          Hey everyone, I’m Peter Bryan, and I’m running for Vice President in
+          this years sophomore student government election. As Vice President, I
+          want to give students a voice, and enable communication between
+          students and staff, and encourage creativity and more choice for
+          students. If I am elected, e-hall pass will be the first thing to go.
         </p>
       </article>
     </div>
@@ -27,17 +28,18 @@
   <main class="m">
     <HomeButton />
 
-    <h2 class="m">Josh Kuchinskas</h2>
+    <h2 class="m">Peter Bryan</h2>
     <h6 class="m">Class of 2024</h6>
-    <h4 class="m">President</h4>
-    <img class="m" src="/images/josh.jpg" alt="Josh Kuchinskas" />
+    <h4 class="m">Representative</h4>
+    <img class="m" src="/images/peter.jpeg" alt="Peter Bryan" />
     <article>
       <h3>About Me</h3>
       <p>
-        Hi, I'm Josh, and I am running for president in this year's sophomore
-        election. As a proud member of Nav party, my goals are to bring back
-        courtyard lunches, increase funding toward clubs and extracurriculars,
-        and find an agreeable solution to the e-hallpass situation.
+        Hey everyone, I’m Peter Bryan, and I’m running for Vice President in
+        this years sophomore student government election. As Vice President, I
+        want to give students a voice, and enable communication between students
+        and staff, and encourage creativity and more choice for students. If I
+        am elected, e-hall pass will be the first thing to go.
       </p>
     </article>
   </main>
@@ -63,7 +65,6 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
     overflow-y: scroll;
-
 
     &.m {
       gap: 1vh;

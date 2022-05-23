@@ -46,6 +46,9 @@
 
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+        overflow-y: scroll;
+
+
         div {
             display: flex;
 
