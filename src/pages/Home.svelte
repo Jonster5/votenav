@@ -30,6 +30,14 @@
 {:else}
   <main>
     <h1 class="m">Welcome to the <br /><strong>Nav Party</strong></h1>
+    <h3>
+      Vote for Officers <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSff3qzQhjERrQHqa3X_7lu1sSHAoebfoeuuM5CRtqMKzG8HRw/viewform?hr_submission=ChgIpYz-oAgSEAiIyIOXmA4SBwiIjsXo9AQQAA&authuser=0"
+        target="_blank"
+      >
+        here
+      </a>
+    </h3>
     <div class="m">
       {#each portraits as p}
         <Mugshot {...p} />
